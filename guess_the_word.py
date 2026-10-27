@@ -65,6 +65,9 @@ def play(word):
     else:
         print("Out of tries. The word was " + word + " thanks for playing.")
 
+def remaining_tries(incorrect_guesses):
+    return max(0, 6 - incorrect_guess)
+
 """ Restarts games, if user wants to replay """ 
 def main():
     word = get_word()
